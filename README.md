@@ -307,6 +307,6 @@ Released under the [MIT License](LICENSE). See `LICENSE` for details.
 **Iron Lab** · Team ID `VTU-QFF-HC-0101` · Tier `Both`
 · Built with ⚛️ Qiskit for the VTU-QFF Hackathon
 
-[⬆ Back to Top](#Iron Lab)
+[⬆ Back to Top](#iron-lab)
 
 </div>
