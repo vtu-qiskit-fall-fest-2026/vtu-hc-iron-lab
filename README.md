@@ -46,9 +46,9 @@
 
 | # | Name | GitHub Username | Role |
 | :-- | :--- | :--- | :--- |
-| 1 | _Add your name_ | _your-github-username_ | _Team Lead_ |
-| 2 | _Add your name_ | _your-github-username_ | _Developer_ |
-| 3 | _Add your name_ | _your-github-username_ | _Developer_ |
+| 1 | SAYIL MEHABOOB TORAGAL | p4319592-star | _Team Lead_ |
+| 2 | SOMAPPA NANDI | darshan2-crypto | _Developer_ |
+| 3 | SOMALINGAPPA KUMBAR | NA| _Developer_ |
 
 <!--
 Optional: add a plain list instead of the table above.
