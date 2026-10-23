@@ -57,7 +57,7 @@
 | :-- | :--- | :--- | :--- |
 | 1 | **SAYIL MEHABOOB TORAGAL** | [@p4319592-star](https://github.com/p4319592-star) | _Team Lead & Architecture_ |
 | 2 | **SOMAPPA NANDI** | [@darshan2-crypto](https://github.com/darshan2-crypto) | _Quantum Protocols & Developer_ |
-| 3 | **SOMALINGAPPA KUMBAR** | NA | _Security Analysis & Developer_ |
+| 3 | **SOMALINGAPPA KUMBAR** | [@somukumbar701-lang](https://github.com/somukumbar701-lang) | _Security Analysis & Developer_ |
 
 ---
 
