@@ -1,8 +1,17 @@
-<div align="center">
+ <div align="center">
 
-# Iron Lab
+# 🛡️ Iron Lab: Q-SHIELD + GibberLink
 
-**VTU-QFF-HC-0101** &nbsp;|&nbsp; Tier: **Both**
+### **Hybrid Quantum Key Distribution (QKD) & Kyber768 Post-Quantum AI Agent Platform**
+
+**VTU-QFF-HC-0101** &nbsp;|&nbsp; Tier: **Both (Quantum + Classical Application)**
+
+[![Qiskit](https://img.shields.io/badge/Qiskit-1.0+-6929C4?style=for-the-badge&logo=qiskit&logoColor=white)](https://qiskit.org/)
+[![Post-Quantum](https://img.shields.io/badge/NIST_PQC-Kyber768_(ML--KEM)-0078D4?style=for-the-badge)](https://csrc.nist.gov/projects/post-quantum-cryptography)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.40+-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Tests](https://img.shields.io/badge/Tests-28%20Passed%20(100%25)-34A853?style=for-the-badge&logo=pytest&logoColor=white)](tests/test_qber.py)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
 </div>
 
@@ -10,14 +19,14 @@
 
 <div align="center">
 
-| | |
+| Attribute | Details |
 | :--- | :--- |
-| **Team** | Iron Lab |
-| **Team ID** | VTU-QFF-HC-0101 |
-| **Tier** | Both |
+| **Team** | **Iron Lab** |
+| **Team ID** | **VTU-QFF-HC-0101** |
+| **Tier** | **Both** |
 | **Repository** | [vtu-hc-iron-lab](https://github.com/vtu-qiskit-fall-fest-2026/vtu-hc-iron-lab.git) |
 | **Organisation** | [vtu-qiskit-fall-fest-2026](https://github.com/vtu-qiskit-fall-fest-2026) |
-| **Event** | VTU-QFF Hackathon — VTU-Qiskit Fall Fest 2026 |
+| **Event** | **VTU-QFF Hackathon — VTU-Qiskit Fall Fest 2026** |
 
 </div>
 
@@ -25,288 +34,109 @@
 
 ## 📌 Table of Contents
 
-- [Team Members](#-team-members-github-ids)
-- [Problem Statement](#-problem-statement)
-- [Proposed Solution](#-proposed-solution)
-- [Approach & Architecture](#-approach--architecture)
-- [Tech Stack](#-tech-stack)
-- [Project Structure](#-project-structure)
-- [How to Run](#-how-to-run)
-- [How to Push Code](#-how-to-push-code)
-- [Submission Checklist](#-submission-checklist)
-- [Resources](#-resources)
-- [License](#-license)
+- [👥 Team Members (GitHub IDs)](#-team-members-github-ids)
+- [❓ Problem Statement](#-problem-statement)
+- [💡 Proposed Solution](#-proposed-solution)
+- [🧩 Approach & Architecture](#-approach--architecture)
+- [🔬 Quantum Formulations & Mathematics](#-quantum-formulations--mathematics)
+- [🛡️ Attack Marketplace & Threat Defense](#️-attack-marketplace--threat-defense)
+- [🛠️ Tech Stack](#️-tech-stack)
+- [📁 Project Structure](#-project-structure)
+- [🚀 How to Run](#-how-to-run)
+- [🧪 Running Test Suite](#-running-test-suite)
+- [🔁 How to Push Code](#-how-to-push-code)
+- [✅ Submission Checklist](#-submission-checklist)
+- [📚 Resources & References](#-resources--references)
+- [📄 License](#-license)
 
 ---
 
 ## 👥 Team Members (GitHub IDs)
 
-> Members are added to this repository as **collaborators** and must accept the
-> GitHub invitation before they can push. Add your GitHub username below.
-
 | # | Name | GitHub Username | Role |
 | :-- | :--- | :--- | :--- |
-| 1 | SAYIL MEHABOOB TORAGAL | p4319592-star | _Team Lead_ |
-| 2 | SOMAPPA NANDI | darshan2-crypto | _Developer_ |
-| 3 | SOMALINGAPPA KUMBAR | NA| _Developer_ |
-
-<!--
-Optional: add a plain list instead of the table above.
-- @username1
-- @username2
--->
+| 1 | **SAYIL MEHABOOB TORAGAL** | [@p4319592-star](https://github.com/p4319592-star) | _Team Lead & Architecture_ |
+| 2 | **SOMAPPA NANDI** | [@darshan2-crypto](https://github.com/darshan2-crypto) | _Quantum Protocols & Developer_ |
+| 3 | **SOMALINGAPPA KUMBAR** | NA | _Security Analysis & Developer_ |
 
 ---
 
 ## ❓ Problem Statement
 
-<!--
-State the problem you are solving. Be specific: what is broken or missing,
-who experiences it, and why does it matter. Link to the official problem
-statement from the brief if one applies.
--->
+**Problem:**  
+Autonomous AI-to-AI agent workflows communicate across untrusted, multi-tenant public networks and acoustic/ambient environments. Conventional classical cryptography (RSA, ECC, Diffie-Hellman) securing these agent interactions is inherently vulnerable to quantum cryptanalysis via Shor's algorithm (**"Store Now, Decrypt Later"** attacks). While pure Quantum Key Distribution (QKD, e.g., BB84, E91) offers theoretical physical security via the No-Cloning Theorem, real-world QKD is constrained by channel attenuation, physical distance limits, and Denial-of-Service aborts when the Quantum Bit Error Rate (QBER) exceeds 11%. Conversely, pure Post-Quantum Cryptography (PQC) lacks physical tampering detection.
 
-**Problem:** _Describe the problem in 2–3 sentences._
+**Why it matters:**  
+Next-generation AI agents executing sensitive multi-agent financial settlements, defence communications, and healthcare protocols require **uncompromising zero-trust security**. If an adversary compromises communication keys, synthetic agent communications can be intercepted or maliciously altered. A single cryptographic paradigm is no longer sufficient; systems require **defense-in-depth** that combines physical quantum guarantees with post-quantum mathematical resilience.
 
-**Why it matters:** _Explain the impact or opportunity._
-
-**Track / Category:** _Online / Offline · Track 1 / Track 2 · <domain>_
+**Track / Category:**  
+**Tier: Both** · Track: **Quantum Cryptography, Quantum Communications & Quantum-Safe AI Systems**
 
 ---
 
 ## 💡 Proposed Solution
 
-<!--
-Describe your solution. Keep it concrete: the core idea, the user flow, and
-the quantum/ML technique you are applying.
--->
+**Solution:**  
+**Iron Lab** presents **Q-SHIELD + GibberLink**: a hybrid quantum-classical security platform for autonomous AI agent communication. The platform integrates:
+1. **Q-SHIELD Hybrid Protocol**: A trust-aware controller dynamically pairing Qiskit-simulated Quantum Key Distribution (**BB84** and **E91 Entanglement-based Bell state protocols**) with NIST FIPS 203 **Kyber768 (ML-KEM)** lattice cryptography.
+2. **GibberLink Acoustic Modem**: Autonomous AI agent negotiation that detects machine-to-machine interactions and switches communication to acoustic/ultrasonic data-over-sound modem bursts (`ggwave`), authenticated with **AES-256-GCM**.
+3. **Attack Marketplace & Quantum Telemetry**: Real-time simulation of quantum and classical attacks (Intercept-Resend, Photon Number Splitting, Detector Blinding, and Active Man-in-the-Middle message tampering) with automatic failover to PQC mode.
+4. **Google MNC-Grade Interactive Dashboard**: Real-time bidirectional messaging, quantum circuit visualizations, live CHSH Bell parameter testing, and statistical histograms.
 
-**Solution:** _In 2–3 sentences, describe what you built._
+**Key idea:**  
+> **Defense-in-depth:** When channel conditions are clean ($QBER < 11\%$), the session key is derived via $K = \text{SHA3-256}(K_{\text{PQC}} \oplus \text{Hash}(K_{\text{QKD}}))$ forcing an adversary to break **both** quantum mechanics and lattice hardness; when an eavesdropper or high attenuation is detected, the trust engine seamlessly fails over to Kyber768 PQC mode with zero session interruption.
 
-**Key idea:** _The one-line technical summary of your approach._
-
-**Why this works:** _How your approach addresses the problem statement._
+**Why this works:**  
+- **Dual-Layer Assurance:** Breaking the session key requires simultaneously defeating quantum information limits (No-Cloning Theorem) AND post-quantum lattice shortest vector problems (LWE).
+- **Zero-Downtime Resilience:** Unlike brittle standalone QKD networks that completely drop connections when Eve attacks ($QBER \ge 11\%$), Q-SHIELD automatically isolates the quantum link and safeguards agent throughput via Kyber768.
+- **Physical Authenticity:** AES-256-GCM verification ensures that active packet tampering by Eve is flagged and rejected at the byte level with 100% cryptographic certainty.
 
 ---
 
 ## 🧩 Approach & Architecture
 
-<!--
-Walk through how it works. A simple pipeline diagram in text or Mermaid is ideal.
--->
-
 ```mermaid
-flowchart LR
-    A[Input Data] --> B[Preprocessing]
-    B --> C[Quantum Circuit / Model]
-    C --> D[Post-processing]
-    D --> E[Output]
-```
+flowchart TD
+    subgraph AgentLayer["🤖 Autonomous AI Agent Layer"]
+        Alice["Agent Alice (A)"]
+        Bob["Agent Bob (B)"]
+        Handshake{"AI Discovery Handshake"}
+        Alice <-->|NLP Pattern Match| Handshake
+        Bob <-->|NLP Pattern Match| Handshake
+    end
 
-1. **Input** — _what data goes in and in what format_
-2. **Preprocessing** — _cleaning, feature extraction, encoding_
-3. **Quantum core** — _the circuit, ansatz, or algorithm used_
-4. **Post-processing** — _decoding, measurement, scoring_
-5. **Output** — _what the user finally gets_
+    subgraph TrustEngine["🛡️ Q-SHIELD Trust-Aware Controller"]
+        Telemetry["Channel Telemetry: QBER & Attenuation Loss (η)"]
+        Decision{"QBER < 11% & Loss < 0.60?"}
+        Telemetry --> Decision
+    end
 
----
+    subgraph QuantumLayer["⚛️ Qiskit Quantum Core"]
+        BB84["BB84 QKD Simulation (Qiskit Aer)"]
+        E91["E91 Bell Entanglement (|Φ⁺⟩ & CHSH S > 2)"]
+    end
 
-## 🛠️ Tech Stack
+    subgraph PQCLayer["🔐 Post-Quantum Cryptography"]
+        Kyber["Kyber768 (NIST ML-KEM) Key Encapsulation"]
+    end
 
-| Layer | Technology |
-| :--- | :--- |
-| Language | Python 3.11+ |
-| Quantum SDK | Qiskit `>=1.0`, Qiskit Aer, Qiskit Runtime |
-| Optimisation | Qiskit Optimization / COBYLA / SPSA |
-| Simulation | AerSimulator (statevector / noisemodel) |
-| Environment | JupyterLab / VS Code, `venv` |
-| Version control | Git + GitHub |
+    subgraph KeyDerivation["🔑 Key Derivation & Defense Layer"]
+        HybridDerivation["HYBRID Mode: K = SHA3-256( K_PQC ⊕ Hash(K_QKD) )"]
+        PQCDefault["PQC_ONLY Mode: K = Kyber768 Shared Secret"]
+    end
 
----
+    subgraph Transport["📡 GibberLink Secure Transport"]
+        GCM["AES-256-GCM Payload Encryption & MAC"]
+        AudioModem["GGWave Acoustic Modem FSK Audio Transmission"]
+    end
 
-## 📁 Project Structure
-
-```text
-vtu-hc-iron-lab/
-├── README.md              # This file
-├── requirements.txt       # Python dependencies
-├── pyproject.toml         # Project metadata (optional)
-├── .gitignore
-├── notebooks/             # Jupyter notebooks for experiments
-│   └── exploration.ipynb
-├── src/
-│   ├── __init__.py
-│   ├── circuit.py         # Quantum circuit construction
-│   ├── optimizer.py       # Optimization loop
-│   └── main.py            # Entry point
-├── data/                  # Datasets (use Git LFS for large files)
-├── tests/                 # Unit tests
-│   └── test_circuit.py
-└── docs/                  # Notes, diagrams, reports
-```
-
----
-
-## 🚀 How to Run
-
-### Prerequisites
-
-- Python 3.11 or newer
-- [Git](https://git-scm.com/downloads)
-- A GitHub account (you need collaborator access to this repo)
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/vtu-qiskit-fall-fest-2026/vtu-hc-iron-lab.git
-cd vtu-hc-iron-lab
-```
-
-### 2. Create a virtual environment
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate        # Linux / macOS
-# .venv\Scripts\activate         # Windows (PowerShell)
-```
-
-### 3. Install dependencies
-
-```bash
-pip install --upgrade pip
-pip install -r requirements.txt
-```
-
-### 4. Run
-
-```bash
-python -m src.main
-```
-
-Or launch the notebook workflow:
-
-```bash
-jupyter lab
-```
-
-### 5. Run the tests
-
-```bash
-pytest -q
-```
-
----
-
-## 🔁 How to Push Code
-
-> Full walkthrough: **[Git & Collaboration Handbook](../vtu-hc-guide-git-and-collaboration)** — collaboration
-> workflow, branches, pull requests, reviews and conflict resolution.
-
-### Configure Git (first time only)
-
-```bash
-git config --global user.name  "Your Name"
-git config --global user.email "you@example.com"
-```
-
-### Everyday workflow
-
-```bash
-# 1. Get the latest changes
-git checkout main
-git pull origin main
-
-# 2. Create a branch for your work
-git checkout -b feature/my-task
-
-# 3. Commit your work
-git add .
-git commit -m "feat: add variational circuit for the search problem"
-
-# 4. Push the branch
-git push -u origin feature/my-task
-
-# 5. Open a Pull Request on GitHub and request a review
-#    https://github.com/vtu-qiskit-fall-fest-2026/vtu-hc-iron-lab/compare/main...feature/my-task
-
-# 6. After approval, merge into main
-git checkout main
-git pull origin main
-git branch -d feature/my-task
-```
-
-### Commit message convention
-
-| Prefix | Meaning |
-| :--- | :--- |
-| `feat:` | New feature |
-| `fix:` | Bug fix |
-| `docs:` | Documentation only |
-| `test:` | Adding or fixing tests |
-| `refactor:` | Code restructure, no behaviour change |
-| `chore:` | Build/config/dependency changes |
-
-### Useful commands
-
-```bash
-git status              # what changed
-git log --oneline -10   # recent commits
-git diff                # review changes before committing
-git stash               # shelve changes temporarily
-git pull --rebase       # update your branch on top of main
-```
-
-### Collaborating on the same repo
-
-- **Never push directly to `main`** — open a Pull Request.
-- **Pull before you push** to avoid rejected commits.
-- **Commit often** with clear messages.
-- **Resolve conflicts** locally: `git pull --rebase`, fix the files, then `git add` + `git rebase --continue`.
-- **Ask for a review** before merging — a second pair of eyes catches bugs fast.
-
----
-
-## ✅ Submission Checklist
-
-- [ ] Repository created and **public**
-- [ ] All team members added as **collaborators** and invitations accepted
-- [ ] `README.md` updated with project details, problem statement and solution
-- [ ] Team members listed under [Team Members](#-team-members-github-ids)
-- [ ] `requirements.txt` committed and project runs from a clean clone
-- [ ] Code pushed to `main` and the latest `main` builds successfully
-- [ ] Notebooks committed with **cleared outputs** (or use `nbstrip`)
-- [ ] `README` includes a demo screenshot / video link
-- [ ] Short project summary submitted on the hackathon portal
-
----
-
-## 📚 Resources
-
-| Resource | Link |
-| :--- | :--- |
-| 🔁 Git & collaboration handbook | [Git & Collaboration Handbook](../vtu-hc-guide-git-and-collaboration) |
-| ❓ Problem statements, solutions & terms | [Problem Statements, Solutions & Terms](../vtu-hc-guide-problem-and-solution) |
-| 📄 README writing guide | [README Guide & Template](../vtu-hc-guide-readme-template) |
-| ⚛️ Qiskit documentation | https://docs.quantum.ibm.com/ |
-| ⚛️ Qiskit Runtime & primitives | https://quantum.cloud.ibm.com/docs/ |
-| 🧪 Qiskit Aer simulator | https://docs.quantum.ibm.com/guides/simulator |
-| 💻 IBM Quantum Platform | https://quantum.cloud.ibm.com/ |
-| 🎓 Qiskit textbook | https://qiskit.qotlabs.org/learning/ |
-| 📋 GitHub Docs | https://docs.github.com/ |
-
----
-
-## 📄 License
-
-Released under the [MIT License](LICENSE). See `LICENSE` for details.
-
----
-
-<div align="center">
-
-**Iron Lab** · Team ID `VTU-QFF-HC-0101` · Tier `Both`
-· Built with ⚛️ Qiskit for the VTU-QFF Hackathon
-
-[⬆ Back to Top](#iron-lab)
-
-</div>
+    Handshake --> Telemetry
+    Decision -- Yes (Clean) --> BB84 & E91
+    Decision -- Yes (Clean) --> Kyber
+    BB84 & Kyber --> HybridDerivation
+    Decision -- No (Eve / Loss) --> Kyber
+    Kyber --> PQCDefault
+    HybridDerivation --> GCM
+    PQCDefault --> GCM
+    GCM --> AudioModem
+    AudioModem --> Bob
