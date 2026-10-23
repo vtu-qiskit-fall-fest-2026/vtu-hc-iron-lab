@@ -28,6 +28,7 @@
 | **Organisation** | [vtu-qiskit-fall-fest-2026](https://github.com/vtu-qiskit-fall-fest-2026) |
 | **Event** | **VTU-QFF Hackathon — VTU-Qiskit Fall Fest 2026** |
 | **YUTUBE VIDEO LINK** | [vtu-hc-iron-lab]( https://youtu.be/FUsdYA0dYVk) |
+| **live access link** | [vtu-hc-iron-lab]( https://sorted-kind-reaction-excited.trycloudflare.com) |
 </div>
 
 ---
@@ -70,7 +71,7 @@ Autonomous AI-to-AI agent workflows communicate across untrusted, multi-tenant p
 Next-generation AI agents executing sensitive multi-agent financial settlements, defence communications, and healthcare protocols require **uncompromising zero-trust security**. If an adversary compromises communication keys, synthetic agent communications can be intercepted or maliciously altered. A single cryptographic paradigm is no longer sufficient; systems require **defense-in-depth** that combines physical quantum guarantees with post-quantum mathematical resilience.
 
 **Track / Category:**  
-**Tier: Both** · Track: **Quantum Cryptography, Quantum Communications & Quantum-Safe AI Systems**
+**Tier: Both** · Track: **Quantum Cryptography & safety ((Quantum Communications & Quantum-Safe AI Systems))**
 
 ---
 
