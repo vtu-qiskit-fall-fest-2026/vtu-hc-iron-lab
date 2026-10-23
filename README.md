@@ -28,8 +28,8 @@
 | **Organisation** | [vtu-qiskit-fall-fest-2026](https://github.com/vtu-qiskit-fall-fest-2026) |
 | **Event** | **VTU-QFF Hackathon — VTU-Qiskit Fall Fest 2026** |
 | **YUTUBE VIDEO LINK** | [vtu-hc-iron-lab]( https://youtu.be/FUsdYA0dYVk) |
-| **live access link server 1** | [vtu-hc-iron-lab]( https://sorted-kind-reaction-excited.trycloudflare.com) |
-| **live access link server 2** | [vtu-hc-iron-lab]( https://sorted-kind-reaction-excited.trycloudflare.com) |
+| **live access link version/server 1** | [vtu-hc-iron-lab]( https://sorted-kind-reaction-excited.trycloudflare.com) |
+| **live access link version/server 2** | [vtu-hc-iron-lab]( https://sorted-kind-reaction-excited.trycloudflare.com) |
 
 </div>
 
