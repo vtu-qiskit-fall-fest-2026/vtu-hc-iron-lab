@@ -27,7 +27,7 @@
 | **Repository** | [vtu-hc-iron-lab](https://github.com/vtu-qiskit-fall-fest-2026/vtu-hc-iron-lab.git) |
 | **Organisation** | [vtu-qiskit-fall-fest-2026](https://github.com/vtu-qiskit-fall-fest-2026) |
 | **Event** | **VTU-QFF Hackathon — VTU-Qiskit Fall Fest 2026** |
-
+| **YUTUBE VIDEO LINK** | [vtu-hc-iron-lab]( https://youtu.be/FUsdYA0dYVk) |
 </div>
 
 ---
